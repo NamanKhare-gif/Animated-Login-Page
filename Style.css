@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #72B0AB;
+    --input-bg: #F1FAF8;
+    --placeholder-color: #8C9A97;
+    --icon-color: #72B0AB;
+    --heading-color: #1F2937;
+    --button-text: #FFFFFF;
+    --card-bg: #FFFFFF;
+    --border-color: #72B0AB;
+    --page-bg: #E6F4F1;
+    --secondary-text: #6B7280;
+}
+
+body{
+    background: var(--page-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container{
+    width: 1150px;
+    height: 96vh;
+    border: 2px solid transparent;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+.Inner-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.Hero-text{
+    width: 575px;
+    height: 96vh;
+    background: var(--primary-color);
+    border: 1px solid transparent;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.Form-text{
+    width: 765px;;
+    height: 96vh;
+    background: #ffff;
+    position: relative;
+    z-index: 0;
+    margin-left: -190px;
+}
