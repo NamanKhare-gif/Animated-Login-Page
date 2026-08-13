@@ -3,6 +3,7 @@ const container = document.querySelector(".Container");
 const btnIcon2 = document.querySelector("#second");
 const btnIcon3 = document.querySelector(".first1");
 const btnIcon4 = document.querySelector(".second1");
+const btnIcon5 = document.querySelector(".third");
 const loginBtn = document.querySelector(".Pri-btn");
 const regtrBtn = document.querySelector(".Register-btn");
 let inputs = document.querySelectorAll(".Form-inputs");
@@ -23,6 +24,11 @@ btnIcon1.addEventListener("click", () => {
 
 btnIcon2.addEventListener("click", () => {
     btnIcon2.classList.toggle("black");
+    inp2.type = inp2.type === "password" ? "text" : "password";
+});
+
+btnIcon5.addEventListener("click", () => {
+    btnIcon5.classList.toggle("black");
     inp2.type = inp2.type === "password" ? "text" : "password";
 });
 

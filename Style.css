@@ -308,7 +308,7 @@ body{
     height: 100%;
     background: transparent ;
     margin-left: 64px;
-    margin-top: 30px;
+    margin-top: -7px;
 
     position: relative;
     z-index: 1;
@@ -327,12 +327,13 @@ body{
             Font-weight: 700;
             Color: #1F2937;
             margin-left: -300px;
+            margin-bottom: 14px;
         }
     }
 
     .Form-inputs{
         width: 445px;
-        height: 60px;
+        height: 52px;
         font-size: 18px;
         border-radius: 12px;    
         border: none;
@@ -364,7 +365,7 @@ body{
 
     .Pri-btn{
         width: 445px;
-        height: 60px;
+        height: 52px;
         background-color: var(--primary-color);
         border-radius: 12px;
         font-size: 18px;
