@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
     content="A modern and responsive login page built with HTML ,CSS and javascript, featuring a clean layout, styled form elements, social login options, Animations and a responsive design.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="Favicon-icon.png">
     <link rel="stylesheet" href="style.css">
     <title>Responsive Login Page</title>
@@ -13,8 +15,37 @@
 
     <div class="Container">
         <div class="Inner-content">
-            <div class="Hero-text"></div>
-            <div class="Form-text"></div>
+            <div class="Hero-text">
+                <div class="hero-cont">
+                    <h1>Hello, Welcome!</h1>
+                    <span>Don't have an account?</span>
+                    <button class="Sec-btn">Register</button>
+                </div>
+            </div>
+            <div class="Form-text">
+                <div class="Form-content">
+                    <h1>Login</h1>
+                    <form action="">
+                        <div class="First-inp">
+                            <input type="text" placeholder="username" class="Form-inputs"> 
+                            <button class="input-icon"><i class="fa-solid fa-user"></i></button>
+                        </div>
+                        <div class="First-inp">
+                            <input type="password" placeholder="Password" class="Form-inputs">
+                            <button class="input-icon"><i class="fa-solid fa-lock"></i></button>
+                        </div>
+                        <span class="link-text">Forgot Password?</span>
+                        <button class="Pri-btn">Login</button>
+                    </form>
+                    <p class="Social-tetxt">or login with social platforms</p>
+                    <div class="Social-links">
+                        <button class="btn-icons"><i class="fa-brands fa-google"></i></button>
+                        <button class="btn-icons"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="btn-icons"><i class="fa-brands fa-github"></i></button>
+                        <button class="btn-icons"><i class="fa-brands fa-linkedin-in"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     

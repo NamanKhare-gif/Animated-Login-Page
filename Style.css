@@ -16,14 +16,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .Container{
     width: 1150px;
     height: 96vh;
-    border: 2px solid transparent;
+    border: none;
     overflow: hidden;
     border-radius: 35px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.40);
 }
 
 .Inner-content{
@@ -45,6 +47,49 @@ body{
     border-bottom-right-radius: 200px;
     position: relative;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero-cont{
+        text-align: center;
+
+        h1{
+            margin-bottom: 12px;
+            margin-top: 10px;
+            font-size: 48px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+
+        span{
+            font-size: 22px;
+            color: #FFFFFF;
+            font-weight: 400;
+            margin-top: -10px;
+        }
+
+        .Sec-btn{
+            margin-top: 30px;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--button-text);
+            width: 245px;
+            height: 70px;
+            border-radius: 12px;
+            background: transparent;
+            border: 1.5px solid white;    
+            display: block;
+            margin-left: 4.3rem;
+            transition: all 0.2s ease;
+        }
+
+        .Sec-btn:hover{
+            background: #5F9994;
+            transform: translateY(-3px);
+            box-shadow: 2px 5px 12px rgba(114, 176, 171, 0.35)
+        }
+    }
 }
 
 .Form-text{
@@ -54,4 +99,104 @@ body{
     position: relative;
     z-index: 0;
     margin-left: -190px;
+    text-align: center;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .Form-content{
+        margin-left: 240px;
+        margin-top: 30px;
+
+        h1{
+            Font-size: 48px;
+            Font-weight: 700;
+            Color: #1F2937;
+            margin-left: -88px;
+        }
+    }
+
+    .Form-inputs{
+        width: 445px;
+        height: 64px;
+        font-size: 18px;
+        border-radius: 12px;    
+        border: none;
+        background-color: var(--input-bg);
+        padding-left: 24px;
+        color: var(--placeholder-color);
+    }
+
+    .Form-inputs:focus{
+        outline: none;
+        border: none;
+    }
+
+    .input-icon{
+        background-color: transparent;
+        color: var(--icon-color);
+        font-size: 20px;
+        height: 50px;
+        width: 50px;
+        border: none;
+        margin-left: -55px;
+        cursor: pointer;
+    }
+
+    .First-inp{
+        display: flex;
+        align-items: center;
+    }
+
+    .Pri-btn{
+        width: 445px;
+        height: 67px;
+        background-color: var(--primary-color);
+        border-radius: 12px;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .Pri-btn:hover{
+        background: #5F9994;
+        transform: translateY(-3px);
+        box-shadow: 2px 5px 12px rgba(114, 176, 171, 0.35);
+    }
+
+    .link-text{
+        color: var(--primary-color);
+        Font-size: 16px;
+        Font-weight: 400;
+        margin-left: -76px;
+        Line-height: 24px;
+    }
+
+    .Social-tetxt{
+        margin-left: -76px;
+        color: var(--secondary-text);
+        Font-size: 16px;
+        Font-weight: 400;
+        Line-height: 24px;
+    }
+    
+    .Social-links{
+        display: flex;
+        margin-left: 80px;
+        gap: 14px;
+    }
+
+    .btn-icons{
+        width: 60px;
+        height: 60px;
+        color: var(--icon-color);
+        border: 1.5px solid var(--border-color);
+        border-radius: 8px;
+        background: transparent;
+    }
 }
