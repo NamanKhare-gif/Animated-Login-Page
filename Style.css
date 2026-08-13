@@ -1,7 +1,7 @@
 :root {
     --primary-color: #72B0AB;
     --input-bg: #F1FAF8;
-    --placeholder-color: #8C9A97;
+    --placeholder-color: #5c6c68;
     --icon-color: #72B0AB;
     --heading-color: #1F2937;
     --button-text: #FFFFFF;
@@ -9,6 +9,10 @@
     --border-color: #72B0AB;
     --page-bg: #E6F4F1;
     --secondary-text: #6B7280;
+}
+
+.black i{
+    color: var(--heading-color);
 }
 
 body{
@@ -26,6 +30,7 @@ body{
     overflow: hidden;
     border-radius: 35px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.40);
+    background-color: #FFFFFF;
 }
 
 .Inner-content{
@@ -121,7 +126,7 @@ body{
 
     .Form-inputs{
         width: 445px;
-        height: 64px;
+        height: 60px;
         font-size: 18px;
         border-radius: 12px;    
         border: none;
@@ -153,7 +158,7 @@ body{
 
     .Pri-btn{
         width: 445px;
-        height: 67px;
+        height: 60px;
         background-color: var(--primary-color);
         border-radius: 12px;
         font-size: 18px;
@@ -175,6 +180,11 @@ body{
         Font-weight: 400;
         margin-left: -76px;
         Line-height: 24px;
+        cursor: pointer;
+    }
+
+    .link-text:hover{
+        text-decoration: underline #72B0AB;
     }
 
     .Social-tetxt{
@@ -198,5 +208,11 @@ body{
         border: 1.5px solid var(--border-color);
         border-radius: 8px;
         background: transparent;
+        font-size: 24px;
+    }
+
+    .btn-icons:hover{
+        background-color: var(--primary-color);
+        color: white;
     }
 }
