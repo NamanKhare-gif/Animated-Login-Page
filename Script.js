@@ -71,6 +71,7 @@ regtrBtn.addEventListener("click", () => {
     setTimeout(() => {
         formText1.style.zIndex = "4";
     },1700);
+    
 });
 
 regBtn.addEventListener("click" , () => {
