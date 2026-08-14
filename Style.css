@@ -239,7 +239,7 @@ body{
     }
 
     .Pri-btn{
-        width: 445px;
+        width: 470px;
         height: 60px;
         background-color: var(--primary-color);
         border-radius: 12px;
@@ -335,7 +335,7 @@ body{
         width: 445px;
         height: 52px;
         font-size: 18px;
-        border-radius: 12px;    
+        border-radius: 12px;
         border: none;
         background-color: var(--input-bg);
         padding-left: 24px;
@@ -364,7 +364,7 @@ body{
     }
 
     .Pri-btn{
-        width: 445px;
+        width: 470px;
         height: 52px;
         background-color: var(--primary-color);
         border-radius: 12px;
