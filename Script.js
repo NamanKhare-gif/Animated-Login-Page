@@ -16,6 +16,10 @@ const formText1 = document.querySelector(".Form-text1");
 const regBtn = document.querySelector("#reg-btn");
 const icon3 = document.querySelector(".icon3");
 const icon4 = document.querySelector(".icon4");
+const loginBtn2 = document.querySelector(".Reg-btn");
+const regPassword = document.querySelector(
+    '.registar-form input[type="password"]'
+);
 
 btnIcon1.addEventListener("click", () => {
     btnIcon1.classList.toggle("black");
@@ -72,6 +76,72 @@ regtrBtn.addEventListener("click", () => {
         formText1.style.zIndex = "4";
     },1700);
     
+});
+
+loginBtn2.addEventListener("click", () => {
+
+    if (!container.classList.contains("register-active")) {
+        return;
+    }
+
+    // ==========================================
+    // 1. Registration Hero text hide
+    // ==========================================
+    setTimeout(() => {
+        heroCont.classList.remove("show");
+    },500);
+
+    // ==========================================
+    // 2. Right 575px → 100%
+    // ==========================================
+
+    setTimeout(() => {
+
+        container.classList.remove("shrink");
+        formText1.style.zIndex = "1";
+
+    }, 400);
+
+
+    // ==========================================
+    // 3. Wait until 575px → 100% animation
+    // completely finishes
+    // ==========================================
+
+    setTimeout(() => {
+
+        // Registration form completely hide
+        formText1.style.display = "none";
+
+    },1190);
+
+
+    // ==========================================
+    // 4. 100% → Left 575px
+    // ==========================================
+
+    setTimeout(() => {
+
+        container.classList.remove("register-active");
+
+    }, 1240);
+
+
+    // ==========================================
+    // 5. Wait for second animation
+    // ==========================================
+
+    setTimeout(() => {
+
+        // Login form show
+        formText.style.display = "block";
+        formText.style.zIndex = "1";
+
+        // Login Hero content show
+        heroCont.classList.remove("hide");
+
+    }, 2490);
+
 });
 
 regBtn.addEventListener("click" , () => {

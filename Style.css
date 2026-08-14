@@ -309,7 +309,7 @@ body{
     background: transparent ;
     margin-left: 64px;
     margin-top: -7px;
-
+    
     position: relative;
     z-index: 1;
     text-align: center;
@@ -447,4 +447,29 @@ body{
 
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
+}
+
+.Container.register-1 .Hero-text1 {
+    width: 100%;
+    right: 0;
+
+    border-radius: 35px;
+}
+
+.Container.register-active1 .hero-cont1 {
+    transform: translateX(600px);
+    opacity: 0;
+}
+
+.Container.register-active1.shrink1 .Hero-text {
+    width: 575px;
+
+    /* RIGHT EDGE FIXED */
+    right: calc(100% - 575px);
+
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
 }
