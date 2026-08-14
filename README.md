@@ -1,6 +1,6 @@
-# Animated Responsive Login Page
+# Animated Login Page
 
-A modern and responsive Login & Registration page built using HTML, CSS, and JavaScript. This project features smooth animations, interactive form elements, basic form validation, password visibility toggles, and a clean modern UI.
+A modern and animated Login & Registration page built using HTML, CSS, and JavaScript. This project features smooth animations, interactive form elements, basic form validation, password visibility toggles, and a clean modern UI.
 
 ## ✨ Features
 
@@ -8,7 +8,6 @@ A modern and responsive Login & Registration page built using HTML, CSS, and Jav
 - 📝 Registration Form
 - 🔄 Smooth Login ↔ Register transition
 - 🎨 Modern and clean UI
-- 📱 Responsive design
 - 👁️ Password visibility toggle
 - ⌨️ Input focus interaction
 - ✅ Basic form validation
