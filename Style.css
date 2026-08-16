@@ -284,6 +284,7 @@ body{
     }
 
     .btn-icons{
+        cursor: pointer;
         width: 60px;
         height: 60px;
         color: var(--icon-color);
@@ -409,6 +410,7 @@ body{
     }
 
     .btn-icons{
+        cursor: pointer;
         width: 60px;
         height: 60px;
         color: var(--icon-color);

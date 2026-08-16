@@ -58,6 +58,7 @@ loginBtn.addEventListener("click", (e) => {
 
 regtrBtn.addEventListener("click", () => {
     container.classList.add("register-active");
+    formText.style.zIndex ="1";
     setTimeout(() => {
         heroCont.classList.add("hide");
     }, 560);
@@ -79,69 +80,27 @@ regtrBtn.addEventListener("click", () => {
 });
 
 loginBtn2.addEventListener("click", () => {
-
     if (!container.classList.contains("register-active")) {
         return;
     }
-
-    // ==========================================
-    // 1. Registration Hero text hide
-    // ==========================================
     setTimeout(() => {
         heroCont.classList.remove("show");
     },500);
-
-    // ==========================================
-    // 2. Right 575px → 100%
-    // ==========================================
-
     setTimeout(() => {
-
         container.classList.remove("shrink");
         formText1.style.zIndex = "1";
-
     }, 400);
-
-
-    // ==========================================
-    // 3. Wait until 575px → 100% animation
-    // completely finishes
-    // ==========================================
-
     setTimeout(() => {
-
-        // Registration form completely hide
         formText1.style.display = "none";
-
     },1190);
-
-
-    // ==========================================
-    // 4. 100% → Left 575px
-    // ==========================================
-
     setTimeout(() => {
-
         container.classList.remove("register-active");
-
     }, 1240);
-
-
-    // ==========================================
-    // 5. Wait for second animation
-    // ==========================================
-
     setTimeout(() => {
-
-        // Login form show
         formText.style.display = "block";
-        formText.style.zIndex = "1";
-
-        // Login Hero content show
+        formText.style.zIndex ="3";
         heroCont.classList.remove("hide");
-
     }, 2490);
-
 });
 
 regBtn.addEventListener("click" , () => {
