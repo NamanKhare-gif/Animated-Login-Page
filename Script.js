@@ -1,4 +1,7 @@
 const btnIcon1 = document.querySelector("#first");
+const textbtn = document.querySelector("#text-btn");
+const emailbtn = document.querySelector("#email-btn");
+const passbtn = document.querySelector("#pass-btn");;
 const container = document.querySelector(".Container");
 const btnIcon2 = document.querySelector("#second");
 const btnIcon3 = document.querySelector(".first1");
@@ -25,6 +28,12 @@ btnIcon1.addEventListener("click", () => {
     btnIcon1.classList.toggle("black");
     inp1.focus();
 });
+
+textbtn.addEventListener("click", () => {
+    btnIcon1.classList.toggle("black");
+    btnIcon3.focus();
+});
+
 
 btnIcon2.addEventListener("click", () => {
     btnIcon2.classList.toggle("black");
